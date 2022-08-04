@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
-      - run: curl -fsSL https://get.pulumi.com | sh
+      - run: which pulumi
       - run: pulumi stack init github-action-blah
       - uses: pulumi/actions@v3
         with:
