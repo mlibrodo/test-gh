@@ -6,6 +6,13 @@ jobs:
     name: Update
     runs-on: ubuntu-latest
     steps:
+      # check out the infra code
       - uses: actions/checkout@v2
         with:
           repository: "mlibrodo/pulumi-test"
+      - uses: pulumi/actions@v3
+        with:
+          command: preview
+          stack-name: ${{ github.sha }}
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
