@@ -1,0 +1,11 @@
+name: Pulumi
+on:
+  - push
+jobs:
+  create-rds:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: "mlibrodo/pulumi-test"
