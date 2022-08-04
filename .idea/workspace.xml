@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="597b7019-cb55-4f2e-9c1a-2798ed17d196" name="Changes" comment="Starting the pulumi integration on GH" />
+    <list default="true" id="597b7019-cb55-4f2e-9c1a-2798ed17d196" name="Changes" comment="add the initial setup of pulumi toolchain">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pulumi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pulumi.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +45,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -55,7 +68,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting the pulumi integration on GH" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting the pulumi integration on GH" />
+    <MESSAGE value="try to preview" />
+    <MESSAGE value="hardcode the stack" />
+    <MESSAGE value="add the initial setup of pulumi toolchain" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the initial setup of pulumi toolchain" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
