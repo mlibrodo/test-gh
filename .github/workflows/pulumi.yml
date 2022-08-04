@@ -14,10 +14,12 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
+      - run: curl -fsSL https://get.pulumi.com | sh
+      - run: pulumi stack init github-action-blah
       - uses: pulumi/actions@v3
         with:
           command: up
-          stack-name: github-action  # somehow we need to init a new stack
+          stack-name: github-action-blah  # somehow we need to init a new stack
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
